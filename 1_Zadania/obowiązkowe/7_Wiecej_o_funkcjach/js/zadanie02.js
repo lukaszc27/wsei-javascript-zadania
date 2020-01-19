@@ -9,6 +9,23 @@ function callOtherFunction(nameOfFunction) {
 callOtherFunction(function (a, b) {
     console.log("Pierwsza liczba:", a);
     console.log("Druga liczba", b)
-    console.log("Wynik", a + b)
-})
+    console.log("Wynik dodawania: ", a + b)
+});
 
+callOtherFunction(function (a, b) {
+    console.log("Pierwsza liczba:", a);
+    console.log("Druga liczba", b)
+    console.log("Wynik odejmowania: ", a - b)
+});
+
+callOtherFunction(function (a, b) {
+    console.log("Pierwsza liczba:", a);
+    console.log("Druga liczba", b)
+    console.log("Wynik mnożenia: ", a * b)
+});
+
+callOtherFunction(function (a, b) {
+    console.log("Pierwsza liczba:", a);
+    console.log("Druga liczba", b)
+    console.log("Wynik dzielenia: ", b > 0 ? a/b : (a > 0 ? b/a : 0));
+});

@@ -5,28 +5,31 @@
  */
 
 
-//Twoj komentarz ...
+// utwożenie funkcji o nazwie jeden bez żadnych parametrów
 function jeden() {
 
-    //Twoj komentarz ...
+    // utworzenie zmiennej lokalnej (o zasięgu od momętu deklaracji do końca funkcji)
+    // oraz przypisanie jej wartości początkowej 1
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    // stworzenie funkcji zagnieżdżonej o nazwie "dwa" również nie przyjmującej
+    // zadnych argumentów
     function dwa() {
 
-        //Twoj komentarz ...
+        // wypisanie w konsoli przeglądarki wartości zmiennej zmienna1
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        // utworznie zmiennej lokalnej oraz przypisanie wartości początkowej 3
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    // wywołanie fukcji dwa
     dwa();
 
-    //Twoj komentarz ...
+    // tutaj powinien pokazać się błąd, ponieważ zmienna2 już nie jest widoczna
+    // w tym miejscu (zmienna2 możęmy użyć tylko w funkcji zagnieżdrzonej "dwa()")
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+// wywołanie funkcji "jeden"
 jeden()
